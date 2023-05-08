@@ -1,0 +1,51 @@
+.hero-banner {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero-first {
+  color: #FF2625;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.hero-second {
+  font-weight: 700;
+  font-size: 44px;
+}
+
+.hero-third {
+  font-size: 22px;
+  line-height: 36px;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  background-color: #FF2625;
+  color: white;
+  padding: 10px 30px;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-bg-text {
+  color: #FF2625;
+  font-weight: 600;
+  opacity: 0.1;
+  display: 'block';
+  font-size: 120px;
+
+
+  @media (max-width: 991px) {
+    display:none;
+  }
+}
+
+.hero-img {
+  width: 50%;
+  border-radius: 50px;
+}
