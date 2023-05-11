@@ -1,6 +1,7 @@
 import React from 'react'
+import BodyPart from './BodyPart'
 
-const HorizontalBodyParts = ({ data }) => {
+const HorizontalBodyParts = ({ data, bodyPart, setBodyPart }) => {
   return (
     <div>
       {data.map((item) => (
@@ -10,7 +11,7 @@ const HorizontalBodyParts = ({ data }) => {
           title={item.id || item}
           className='body-part-item'
         >
-          {item}
+          <BodyPart item = {item} bodyPart={bodyPart} setBodyPart={setBodyPart}/>
         </div>
         ))}
     </div>
